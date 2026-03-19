@@ -1,0 +1,35 @@
+{
+  "dose_limits": {
+    "metformin": { "max_mg": 2000, "unit": "mg" },
+    "lisinopril": { "max_mg": 40, "unit": "mg" },
+    "atorvastatin": { "max_mg": 80, "unit": "mg" },
+    "warfarin": { "max_mg": 10, "unit": "mg" }
+  },
+  "unsafe_combinations": [
+    {
+      "drugs": ["warfarin", "aspirin"],
+      "type": "class_conflict",
+      "reason": "Increased bleeding risk"
+    },
+    {
+      "drugs": ["ssri", "maoi"],
+      "type": "class_conflict",
+      "reason": "Risk of serotonin syndrome"
+    },
+    {
+      "drugs": ["metformin", "contrast_dye"],
+      "type": "class_conflict",
+      "reason": "Risk of lactic acidosis"
+    }
+  ],
+  "drug_classes": {
+    "warfarin": "anticoagulant",
+    "aspirin": "antiplatelet",
+    "fluoxetine": "ssri",
+    "sertraline": "ssri",
+    "phenelzine": "maoi",
+    "metformin": "biguanide",
+    "lisinopril": "ace_inhibitor",
+    "atorvastatin": "statin"
+  }
+}
