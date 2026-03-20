@@ -229,11 +229,4 @@ All core logic and design decisions were reviewed and validated manually.
 
 ---
 
-## Summary
 
-This project demonstrates:
-
-* structured backend design
-* handling of conflicting data sources
-* clean API design with validation
-* ability to reason about data modeling and trade-offs
